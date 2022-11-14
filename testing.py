@@ -29,12 +29,12 @@ def test_multiple_root():
     assert len(res) == 2
     assert res == [0.5, -3]
 
-@fixture
-def call_me_every_time():
-    print("Haha")
+# @fixture
+# def call_me_every_time():
+#     print("Haha")
 
-def test_one(call_me_every_time):
-    print("Test one")
+# def test_one(call_me_every_time):
+#     print("Test one")
 
 @pytest.mark.parametrize(
     ('a, b, c, expected'),[
